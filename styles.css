@@ -1,0 +1,206 @@
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  body {
+    background-color: #F2EAE2;
+  }
+  .container {
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: 28px 16px 28px 16px;
+    background-color: white;
+    overflow: clip;
+    border-radius: 10px;
+  }
+  span {
+    display: block;
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: 0.313rem;
+    margin: 24px 0 12px 24px;
+  }
+  img {
+    width: 100%;
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    color: #1C232B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 16px;
+    margin-left: 24px;
+    margin-right: 24px;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0;
+    margin-left: 24px;
+    margin-right: 24px;
+    margin-bottom: 24px;
+  }
+  .price {
+    margin-top: 0;
+    margin-bottom: 20px;
+    margin-left: 24px;
+    margin-right: 24px;
+    display: flex;
+    align-items: center;
+  }
+  .price ins {
+    font-family: "Fraunces", serif;
+    color: #3D8168;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-decoration: none;
+  }
+  .price del {
+    margin-left: 19px;
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    font-size: 0.813rem;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0;
+  }
+  .button-wraper {
+    padding-left: 24px;
+    padding-right: 24px;
+  }
+  .button-wraper button {
+    border: none;
+    background-color: #3D8168;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  .button-wraper img {
+    width: 14.39px;
+    margin-right: 11.61px;
+  }
+}
+@media (min-width: 501px) {
+  body {
+    background-color: #F2EAE2;
+  }
+  .container {
+    background-color: white;
+    display: flex;
+    height: 450px;
+    max-width: 600px;
+    margin-left: 16px;
+    margin-right: 16px;
+    border-radius: 10px;
+    overflow: clip;
+  }
+  .text-container {
+    margin: 32px;
+  }
+  span {
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: auto;
+    letter-spacing: 0.313rem;
+  }
+  h1 {
+    font-family: "Fraunces", serif;
+    color: #1C232B;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    margin-top: 20px;
+    margin-bottom: 24px;
+  }
+  p {
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    font-size: 0.875rem;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0;
+    margin-top: 0;
+    margin-bottom: 29px;
+  }
+  .price {
+    margin-top: 0;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+  }
+  .price ins {
+    font-family: "Fraunces", serif;
+    color: #3D8168;
+    font-size: 2rem;
+    font-weight: 700;
+    line-height: 32px;
+    letter-spacing: 0;
+    text-decoration: none;
+  }
+  .price del {
+    margin-left: 19px;
+    font-family: "Montserrat", sans-serif;
+    color: #6C7289;
+    font-size: 0.813rem;
+    font-weight: 500;
+    line-height: 23px;
+    letter-spacing: 0;
+  }
+  .button-wraper button {
+    border: none;
+    background-color: #3D8168;
+    font-family: "Montserrat", sans-serif;
+    color: white;
+    font-size: 0.875rem;
+    font-weight: 700;
+    line-height: auto;
+    letter-spacing: 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    border-radius: 8px;
+    margin-bottom: 24px;
+    width: 100%;
+    box-sizing: border-box;
+    transition: 0.3s ease;
+  }
+  .button-wraper button:hover {
+    background-color: #1A4032;
+    cursor: pointer;
+  }
+  .button-wraper img {
+    width: 14.39px;
+    margin-right: 11.61px;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */

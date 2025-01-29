@@ -1,0 +1,194 @@
+$deep-aquamarine: #3D8168;
+$aurometal-saurus: #6C7289;
+$gunmetal: #1C232B;
+$cream: #F2EAE2;
+
+@mixin text-montserrat($color, $fsize, $fweight, $lh, $ls) {
+    font-family: 'Montserrat', sans-serif;
+    color: $color;
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin text-fraunces($color, $fsize, $fweight, $lh, $ls) {
+    font-family: 'Fraunces', serif;
+    color: $color;
+    font-size: $fsize;
+    font-weight: $fweight;
+    line-height: $lh;
+    letter-spacing: $ls;
+}
+
+@mixin margin-left-right($margin) {
+    margin-left: $margin;
+    margin-right: $margin;
+}
+
+html,
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media(max-width: 500px) {
+    body {
+        background-color: $cream;
+    }
+
+    .container {
+        box-sizing: border-box;
+        max-width: 100%;
+        margin: 28px 16px 28px 16px;
+        background-color: white;
+        overflow: clip;
+        border-radius: 10px;
+    }
+
+    span {
+        display: block;
+        @include text-montserrat($aurometal-saurus, 0.75rem, 500, auto, 0.313rem);
+        margin: 24px 0 12px 24px;
+    }
+
+    img {
+        width: 100%;
+    }
+
+    h1 {
+        @include text-fraunces($gunmetal, 2rem, 700, 32px, 0);
+        margin-top: 0;
+        margin-bottom: 16px;
+        @include margin-left-right(24px);
+    }
+
+    p {
+        @include text-montserrat($aurometal-saurus, 0.875rem, 500, 23px, 0);
+        @include margin-left-right(24px);
+        margin-bottom: 24px;
+    }
+
+    .price {
+        margin-top: 0;
+        margin-bottom: 20px;
+        @include margin-left-right(24px);
+        display: flex;
+        align-items: center;
+
+        ins {
+            @include text-fraunces($deep-aquamarine, 2rem, 700, 32px, 0);
+            text-decoration: none;
+        }
+
+        del {
+            margin-left: 19px;
+            @include text-montserrat($aurometal-saurus, 0.813rem, 500, 23px, 0);
+        }
+    }
+
+    .button-wraper {
+        padding-left: 24px;
+        padding-right: 24px;
+
+        button {
+            border: none;
+            background-color: $deep-aquamarine;
+            @include text-montserrat(white, 0.875rem, 700, auto, 0);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        img {
+            width: 14.39px;
+            margin-right: 11.61px;
+        }
+    }
+}
+
+@media(min-width: 501px) {
+    body {
+        background-color: $cream;
+    }
+
+    .container {
+        background-color: white;
+        display: flex;
+        height: 450px;
+        max-width: 600px;
+        @include margin-left-right(16px);
+        border-radius: 10px;
+        overflow: clip;
+    }
+
+    .text-container {
+        margin: 32px;
+    }
+
+    span {
+        @include text-montserrat($aurometal-saurus, 0.75rem, 500, auto, 0.313rem);
+    }
+
+    h1 {
+        @include text-fraunces($gunmetal, 2rem, 700, 32px, 0);
+        margin-top: 20px;
+        margin-bottom: 24px;
+    }
+
+    p {
+        @include text-montserrat($aurometal-saurus, 0.875rem, 500, 23px, 0);
+        margin-top: 0;
+        margin-bottom: 29px;
+    }
+
+    .price {
+        margin-top: 0;
+        margin-bottom: 30px;
+        display: flex;
+        align-items: center;
+
+        ins {
+            @include text-fraunces($deep-aquamarine, 2rem, 700, 32px, 0);
+            text-decoration: none;
+        }
+
+        del {
+            margin-left: 19px;
+            @include text-montserrat($aurometal-saurus, 0.813rem, 500, 23px, 0);
+        }
+    }
+
+    .button-wraper {
+        button {
+            border: none;
+            background-color: $deep-aquamarine;
+            @include text-montserrat(white, 0.875rem, 700, auto, 0);
+            padding-top: 15px;
+            padding-bottom: 15px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+            width: 100%;
+            box-sizing: border-box;
+            transition: 0.3s ease;
+            &:hover {
+                background-color: #1A4032;
+                cursor: pointer;
+            }
+
+        }
+
+        img {
+            width: 14.39px;
+            margin-right: 11.61px;
+        }
+
+    }
+}
