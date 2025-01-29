@@ -122,7 +122,7 @@ body {
     overflow: clip;
   }
   .text-container {
-    margin: 32px;
+    margin: 28px 32px 32px 32px;
   }
   span {
     font-family: "Montserrat", sans-serif;
