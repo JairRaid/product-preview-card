@@ -42,7 +42,7 @@ Users should be able to:
 - CSS custom properties
 - Flexbox
 - Mobile-first workflow
-- Custom script js
+- Custom JavaScript
 - Sass
 
 ### What I learned
