@@ -102,6 +102,10 @@ body {
     width: 100%;
     box-sizing: border-box;
   }
+  .button-wraper button:hover {
+    background-color: #1A4032;
+    cursor: pointer;
+  }
   .button-wraper img {
     width: 14.39px;
     margin-right: 11.61px;
